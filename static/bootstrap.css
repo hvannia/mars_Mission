@@ -364,7 +364,8 @@
    font-family: inherit;
    font-weight: 500;
    line-height: 1.2;
-   color: #fff;
+   /*color: #fff;*/
+   color:#666;
  }
  
  h1, .h1 {
@@ -2609,15 +2610,23 @@
  }
  
  .btn-primary {
+   /*
    color: #fff;
    background-color: #2A9FD6;
-   border-color: #2A9FD6;
+   border-color: #2A9FD6;*/
+   color:#666;
+   background-origin: #f7d8ac;
+   border-color: #666;
+
  }
  
  .btn-primary:hover {
-   color: #fff;
+   /*color: #fff;
    background-color: #2387b7;
-   border-color: #2180ac;
+   border-color: #2180ac;*/
+   background-color: #f7b233;
+   border-color: #f7b233;
+   color:#999;
  }
  
  .btn-primary:focus, .btn-primary.focus {
@@ -2634,8 +2643,8 @@
  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
  .show > .btn-primary.dropdown-toggle {
    color: #fff;
-   background-color: #2180ac;
-   border-color: #1f78a1;
+   background-color: #f7d8acAA;
+   border-color: #f7d8ac;
  }
  
  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -5442,7 +5451,8 @@
  }
  
  .alert-heading {
-   color: inherit;
+   /*color: inherit;*/
+   color:#666;
  }
  
  .alert-link {
@@ -10400,7 +10410,8 @@
  }
  
  .btn-primary {
-   background-color: #2A9FD6;
+   /*background-color: #2A9FD6;*/
+   background-color: #f7d8acAA;
  }
  
  .btn-secondary {
@@ -10432,7 +10443,7 @@
  }
  
  table {
-   color: #fff;
+   color: #666;
  }
  
  .table-primary,
@@ -10561,7 +10572,8 @@
  
  .alert {
    border: none;
-   color: #fff;
+   /*color: #fff;*/
+   color:#666;
  }
  
  .alert a,

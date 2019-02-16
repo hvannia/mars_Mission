@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- bootswatch. Bootstrap CSS -->
+
+      
+        <link type="text/css"  href="static/bootstrap.css" rel="stylesheet">
+        <link type="text/css"  href="static/mars.css" rel="stylesheet">
+    
+        <title>Mission to Mars</title>
+      </head>
+      <body>
+        <div class="container">
+                <div class="row ">
+                        <div class="col-lg-12 col-sm-12"> 
+                                <p class=" mx-auto" ><a class="btn btn-primary btn-lg" style="width:100%;"
+                                        href="/scrape" role="button">Get Mars Data</a></p>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                                        <div class="alert alert-sucess" role="alert">
+                                                <h4 class="alert-heading">{{mdata.news_title}}</h4>
+                                                <hr>
+                                                <p class="mb-0">{{mdata.news_paragraph}}</p>
+                                        </div>
+                        </div>
+                </div><!-- row 1-->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="alert alert-sucess" role="alert">           
+                            <h5 class="alert-heading">Mars Weather</h5>
+                            <hr>
+                            <p class="mb-0">{{mdata.mars_weather}}</p>
+                        </div>
+                        <div class="alert alert-sucess" role="alert">                           
+                            <h5 class="alert-heading">Mars Facts</h5>
+                            <hr>
+                            {{mdata.facts|safe}}
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="alert alert-sucess" role="alert">                          
+                            <h5 class="alert-heading">Featured Image</h5>
+                        </div>
+                        <div class="img-rounded img-responsive">
+                            <img style="width:100%" src="{{mdata.featured_img_url}}" alt="Featured">
+                        </div>
+                        
+                    </div>
+                </div><!-- row 3 -->
+                <div class="row">
+                        {% for h in hemis %}
+                        <div class="col-lg-6">
+                            <h6>{{ h }}</h6>
+                                <img class="img-fluid rounded float-left " src="{{ hemis[h] }}" alt="{{h}}" /> 
+                         </div>
+                        {% endfor %}
+                </div><!-- row-->
+        </div><!-- container-->
+
+
+
+              <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+
+
+
