@@ -1,6 +1,6 @@
 # Web Scraping
 
-This application retrieves data from 4 Nasa sitres to gather information about Mars .
+This application retrieves data from 4 Nasa sites to gather information about Mars .
 
 scrape_mars.py :
   Beautiful is used to retrieve and filter html data.
