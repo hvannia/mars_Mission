@@ -3,7 +3,7 @@
 This application retrieves data from 4 Nasa sites to gather information about Mars .
 
 scrape_mars.py :
-  Beautiful is used to retrieve and filter html data.
+  Beautiful soup is used to retrieve and filter html data.
   Pandas is used get/keep html data. 
   
 app.py:
